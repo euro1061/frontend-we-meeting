@@ -1,75 +1,109 @@
-# Nuxt UI Minimal Starter
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+# We-Meeting Frontend
 
-## Setup
+We-Meeting is a web application for booking and managing meeting rooms. This repository contains the frontend code for the We-Meeting project.
 
-Make sure to install the dependencies:
+![Logo](https://img5.pic.in.th/file/secure-sv1/We-Meeting.jpg)
 
-```bash
-# npm
-npm install
+## Table of Contents
 
-# pnpm
-pnpm install
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Building for Production](#building-for-production)
+- [Contributing](#contributing)
+- [License](#license)
 
-# yarn
-yarn install
+## Technologies Used
 
-# bun
-bun install
+- [TypeScript](https://www.typescriptlang.org/)
+- [Nuxt.js](https://nuxt.com/) (Vue.js framework)
+- [Nuxt UI](https://ui.nuxt.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [dayjs](https://day.js.org/)
+- [axios](https://axios-http.com/)
+- [yup](https://github.com/jquense/yup)
+
+## Project Structure
+
+```
+frontend-we-meeting/
+├── components/      # Reusable Vue components
+├── composables/     # Shared code (e.g., useBookingForm, useAuth)
+├── layouts/         # Application layouts
+├── pages/           # Application pages
+├── plugins/         # Nuxt plugins
+├── utils/           # Utility functions and API client
+├── nuxt.config.ts   # Nuxt configuration file
+├── tailwind.config.js # Tailwind CSS configuration
+└── package.json     # Project dependencies and scripts
 ```
 
-## Development Server
+## Getting Started
 
-Start the development server on `http://localhost:3000`:
+### Prerequisites
 
-```bash
-# npm
+- Node.js (version 14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/frontend-we-meeting.git
+   cd frontend-we-meeting
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add the following variables:
+   ```
+   API_BASE_URL=http://your-backend-api-url
+   ```
+
+## Running the Application
+
+To run the application in development mode:
+
+```
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
+# or
 yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+The application will be available at `http://localhost:3000`.
 
-Build the application for production:
+## Building for Production
 
-```bash
-# npm
+To build the application for production:
+
+```
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
+# or
 yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+To start the production server:
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```
+npm run start
+# or
+yarn start
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contributing
+
+We welcome contributions to the We-Meeting project. Please read our contributing guidelines before submitting pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
