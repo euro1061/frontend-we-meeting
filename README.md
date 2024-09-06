@@ -1,23 +1,23 @@
 
 # We-Meeting Frontend
 
-We-Meeting is a web application for booking and managing meeting rooms. This repository contains the frontend code for the We-Meeting project.
+We-Meeting เป็นแอปพลิเคชันเว็บสำหรับการจองและจัดการห้องประชุม ที่เก็บนี้ประกอบด้วยโค้ด frontend สำหรับโปรเจค We-Meeting
 
 ![Logo](https://img5.pic.in.th/file/secure-sv1/We-Meeting.jpg)
 
-## Table of Contents
+## สารบัญ
 
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Building for Production](#building-for-production)
-- [Contributing](#contributing)
-- [License](#license)
+- [เทคโนโลยีที่ใช้](#เทคโนโลยีที่ใช้)
+- [โครงสร้างโปรเจค](#โครงสร้างโปรเจค)
+- [เริ่มต้นใช้งาน](#เริ่มต้นใช้งาน)
+  - [ความต้องการเบื้องต้น](#ความต้องการเบื้องต้น)
+  - [การติดตั้ง](#การติดตั้ง)
+- [การรันแอปพลิเคชัน](#การรันแอปพลิเคชัน)
+- [การสร้างเวอร์ชันสำหรับใช้งานจริง](#การสร้างเวอร์ชันสำหรับใช้งานจริง)
+- [การมีส่วนร่วมในการพัฒนา](#การมีส่วนร่วมในการพัฒนา)
+- [ลิขสิทธิ์](#ลิขสิทธิ์)
 
-## Technologies Used
+## เทคโนโลยีที่ใช้
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Nuxt.js](https://nuxt.com/) (Vue.js framework)
@@ -27,83 +27,83 @@ We-Meeting is a web application for booking and managing meeting rooms. This rep
 - [axios](https://axios-http.com/)
 - [yup](https://github.com/jquense/yup)
 
-## Project Structure
+## โครงสร้างโปรเจค
 
 ```
 frontend-we-meeting/
-├── components/      # Reusable Vue components
-├── composables/     # Shared code (e.g., useBookingForm, useAuth)
-├── layouts/         # Application layouts
-├── pages/           # Application pages
-├── plugins/         # Nuxt plugins
-├── utils/           # Utility functions and API client
-├── nuxt.config.ts   # Nuxt configuration file
-├── tailwind.config.js # Tailwind CSS configuration
-└── package.json     # Project dependencies and scripts
+├── components/      # คอมโพเนนต์ Vue ที่นำกลับมาใช้ใหม่ได้
+├── composables/     # โค้ดที่ใช้ร่วมกัน (เช่น useBookingForm, useAuth)
+├── layouts/         # เลย์เอาต์ของแอปพลิเคชัน
+├── pages/           # หน้าต่างๆ ของแอปพลิเคชัน
+├── plugins/         # ปลั๊กอิน Nuxt
+├── utils/           # ฟังก์ชันยูทิลิตี้และ API client
+├── nuxt.config.ts   # ไฟล์การตั้งค่า Nuxt
+├── tailwind.config.js # การตั้งค่า Tailwind CSS
+└── package.json     # รายการ dependencies และ scripts ของโปรเจค
 ```
 
-## Getting Started
+## เริ่มต้นใช้งาน
 
-### Prerequisites
+### ความต้องการเบื้องต้น
 
-- Node.js (version 14 or later)
-- npm or yarn
+- Node.js (เวอร์ชัน 14 หรือใหม่กว่า)
+- npm หรือ yarn
 
-### Installation
+### การติดตั้ง
 
-1. Clone the repository:
+1. โคลนที่เก็บ:
    ```
    git clone https://github.com/your-username/frontend-we-meeting.git
    cd frontend-we-meeting
    ```
 
-2. Install dependencies:
+2. ติดตั้ง dependencies:
    ```
    npm install
-   # or
+   # หรือ
    yarn install
    ```
 
-3. Set up environment variables:
-   Create a `.env` file in the root directory and add the following variables:
+3. ตั้งค่าตัวแปรสภาพแวดล้อม:
+   สร้างไฟล์ `.env` ในไดเรกทอรีหลักและเพิ่มตัวแปรต่อไปนี้:
    ```
    API_BASE_URL=http://your-backend-api-url
    ```
 
-## Running the Application
+## การรันแอปพลิเคชัน
 
-To run the application in development mode:
+เพื่อรันแอปพลิเคชันในโหมดพัฒนา:
 
 ```
 npm run dev
-# or
+# หรือ
 yarn dev
 ```
 
-The application will be available at `http://localhost:3000`.
+แอปพลิเคชันจะสามารถเข้าถึงได้ที่ `http://localhost:3000`
 
-## Building for Production
+## การสร้างเวอร์ชันสำหรับใช้งานจริง
 
-To build the application for production:
+เพื่อสร้างแอปพลิเคชันสำหรับการใช้งานจริง:
 
 ```
 npm run build
-# or
+# หรือ
 yarn build
 ```
 
-To start the production server:
+เพื่อเริ่มเซิร์ฟเวอร์สำหรับการใช้งานจริง:
 
 ```
 npm run start
-# or
+# หรือ
 yarn start
 ```
 
-## Contributing
+## การมีส่วนร่วมในการพัฒนา
 
-We welcome contributions to the We-Meeting project. Please read our contributing guidelines before submitting pull requests.
+เรายินดีต้อนรับการมีส่วนร่วมในโปรเจค We-Meeting กรุณาอ่านแนวทางการมีส่วนร่วมของเราก่อนส่ง pull requests
 
-## License
+## ลิขสิทธิ์
 
-This project is licensed under the [MIT License](LICENSE).
+โปรเจคนี้อยู่ภายใต้ [ลิขสิทธิ์ MIT](LICENSE)
